@@ -1,0 +1,134 @@
+ Geliþmiþ Resim Ýþleme Programý (Advanced Image Processing Program)
+
+Bu program, OpenCV ve Python kullanýlarak geliþtirilmiþ kapsamlý bir görüntü iþleme uygulamasýdýr. Program, temel ve ileri düzey görüntü iþleme fonksiyonlarý sunarak, kullanýcýlarýn görüntüler üzerinde çeþitli manipülasyonlar yapmasýna olanak tanýr.
+
+ Özellikler
+
+Program aþaðýdaki görüntü iþleme fonksiyonlarýný içermektedir:
+
+1. Gri Tonlama Dönüþümü
+2. Gaussian Bulanýklaþtýrma
+3. Kenar Tespiti (Canny Algoritmasý)
+4. Görüntü Döndürme
+5. Görüntü Boyutlandýrma
+6. Görüntü Kýrpma
+7. Görüntü Erozyonu
+8. Görüntü Dilasyonu
+9. Görüntüye Metin Ekleme
+10. Renk Eþitleme (Histogram Eþitleme)
+11. Sobel Kenar Algýlama
+12. Iþýldama Efekti
+13. Kontrast Artýrma
+14. Görüntü Keskinleþtirme
+15. Sepya Efekti
+16. Görüntü Kaydetme
+17. Orijinal Görüntüye Dönme
+
+ Gereksinimler
+
+Programý çalýþtýrmak için aþaðýdaki kütüphanelerin yüklü olmasý gerekmektedir:
+
+pip install opencv-python
+pip install numpy
+
+Not: Python'un tkinter modülü genellikle Python kurulumu ile birlikte gelir.
+
+ Kurulum
+
+1. Repo'yu bilgisayarýnýza klonlayýn veya ZIP dosyasý olarak indirin
+2. Gerekli kütüphaneleri yükleyin
+3. Python dosyasýný çalýþtýrýn
+
+Kullaným
+
+1. Programý baþlatýn:
+python goruntu_isleme.py
+
+2. Program baþlatýldýðýnda, bir dosya seçim penceresi açýlacaktýr. Ýþlemek istediðiniz görüntü dosyasýný seçin.
+
+3. Ana menüden yapmak istediðiniz iþlemleri seçin:
+   - Tek bir iþlem için sadece numara girin (örn: "1")
+   - Birden fazla iþlem için numaralarý virgülle ayýrarak girin (örn: "1,2,5")
+
+4. Her iþlem sonrasýnda iþlenmiþ görüntü ekranda gösterilecektir:
+   - Görüntüyü kapatmak için herhangi bir tuþa basýn
+   - Ýþleme devam etmek için menüden yeni seçimler yapýn
+
+5. Ýþlenmiþ görüntüyü kaydetmek için menüden 16 numaralý seçeneði kullanýn
+
+Ýþlem Detaylarý
+
+ 1. Gri Tonlama
+- Renkli görüntüyü gri tonlamalý görüntüye dönüþtürür
+- Zaten gri tonlamalý olan görüntüleri deðiþtirmez
+
+ 2. Gaussian Bulanýklaþtýrma
+- 15x15 boyutunda bir kernel kullanarak görüntüyü yumuþatýr
+- Gürültü azaltma için kullanýlabilir
+
+ 3. Kenar Tespiti
+- Canny kenar dedektörü kullanýlarak görüntüdeki kenarlarý tespit eder
+- Otomatik olarak gri tonlamaya dönüþtürme yapar
+
+ 4. Görüntü Döndürme
+- Görüntüyü belirtilen derece kadar döndürür
+- Merkez nokta etrafýnda döndürme yapar
+
+ 5. Boyutlandýrma
+- Görüntüyü belirtilen oran ile yeniden boyutlandýrýr
+- 1'den küçük deðerler küçültme, 1'den büyük deðerler büyütme yapar
+
+ 6. Kýrpma
+- Belirtilen koordinatlar arasýndaki bölgeyi keser
+- Geçersiz koordinat giriþlerinde hata verir
+
+ 7-8. Erozyon ve Dilasyon
+- Morfolojik iþlemler için 5x5 kernel kullanýr
+- Erozyon: Nesneleri inceltir
+- Dilasyon: Nesneleri kalýnlaþtýrýr
+
+ 9. Metin Ekleme
+- Belirtilen koordinatlara mavi renkte metin ekler
+- FONT_HERSHEY_SIMPLEX yazý tipini kullanýr
+
+ 10. Renk Eþitleme
+- Histogram eþitleme uygular
+- Renkli görüntülerde sadece parlaklýk kanalýna uygulanýr
+
+ 11. Sobel Kenar Algýlama
+- X ve Y yönlerinde gradyanlarý hesaplar
+- Kenarlarý daha detaylý gösterir
+
+12-15. Efektler
+- Iþýldama: Görüntüye parlak bir efekt ekler
+- Kontrast: Görüntünün kontrastýný artýrýr
+- Keskinleþtirme: Detaylarý belirginleþtirir
+- Sepya: Nostaljik kahverengi ton efekti uygular
+
+Hata Yönetimi
+
+Program aþaðýdaki durumlarda uygun hata mesajlarý gösterir:
+- Geçersiz dosya seçimi
+- Görüntü yükleme hatasý
+- Geçersiz koordinat giriþi
+- Geçersiz boyutlandýrma oraný
+- Kaydetme iþlemi hatalarý
+
+Katkýda Bulunma
+
+1. Bu repo'yu fork edin
+2. Yeni bir branch oluþturun
+3. Deðiþikliklerinizi commit edin
+4. Branch'inizi push edin
+5. Pull request oluþturun
+
+Lisans 
+Bu proje açýk kaynaklýdýr ve MIT Lisansý altýnda sunulmaktadýr.
+
+Ýletiþim
+Demet toy
+toydemet49@gmail.com
+
+
+Herhangi bir soru veya öneriniz için issue açabilirsiniz.
+
