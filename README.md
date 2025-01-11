@@ -1,2 +1,2 @@
-# Gelişmiş Görüntü işleme uygulaması
+# Gelişmiş Görüntü İşleme Uygulaması
 Nesne Tabanlı Programlama
