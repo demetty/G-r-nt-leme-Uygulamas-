@@ -1,2 +1,2 @@
-# G-r-nt-leme-Uygulamas-
+# Gelişmiş Görüntü işleme uygulaması
 Nesne Tabanlı Programlama
